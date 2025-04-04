@@ -18,4 +18,6 @@ Route::get('/logout', [AuthenticationController::class, 'logout'])->name('logout
 // });
 Route::prefix('dashboard')->middleware(['admin'])->group(function () {
     Route::get('/', [AdminController::class, 'index'])->name('dashboard.index');
+    Route::get('categories', [\App\Http\Controllers\Admin\CategoryController::class, 'index'])->name('categories.index');
+    Route::resource('categories', \App\Http\Controllers\Admin\CategoryController::class)->except(['index']);
 });

@@ -61,10 +61,9 @@
             </a>
           </li>
           <li class="nav-item">
-            <a data-bs-toggle="collapse" href="#base">
+            <a href="{{ route('products.index') }}">
               <i class="fas fa-layer-group"></i>
               <p>Quản lý sản phẩm</p>
-              <span class="caret"></span>
             </a>
           </li>
           <li class="nav-item">

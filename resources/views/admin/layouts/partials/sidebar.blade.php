@@ -67,9 +67,9 @@
             </a>
           </li>
           <li class="nav-item">
-            <a data-bs-toggle="collapse" href="#base">
+            <a  href="{{ route('posts.index') }}">
               <i class="fas fa-layer-group"></i>
-              <p>Quản lý tài khoản</p>
+              <p>Quản lý bài viết</p>
               <span class="caret"></span>
             </a>
           </li>
